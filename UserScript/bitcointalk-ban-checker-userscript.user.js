@@ -193,6 +193,6 @@
         // Initial check
         checkBannedUsersOnThread();
 
-        
+    }
 
 })();
