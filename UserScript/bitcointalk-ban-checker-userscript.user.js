@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Bitcointalk Banned Users Checker
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      1.0
 // @description  Checks if a user is banned on Bitcointalk
 // @author       promise444c5
 // @match        https://bitcointalk.org/index.php?action=profile*
