@@ -21,8 +21,10 @@
     }
   ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "scripts": ["background.js"]
   },
+ 
   "action": {
     "default_icon": {
       "16": "images/image1.png",

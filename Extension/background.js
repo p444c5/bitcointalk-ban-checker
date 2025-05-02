@@ -1,5 +1,5 @@
 /* 
-** Background script for the Bitcoin Forum Ban Checker extension..
+** Background script for the Bitcointalk Ban Checker extension..
 */
 
 // Initialize browser API compatibility layer
@@ -54,7 +54,7 @@ async function fetchBannedUsers() {
 
 // Listen for installation
 browserAPI.runtime.onInstalled.addListener(function() {
-  console.log("Bitcoin Forum Ban Checker installed!");
+  console.log("Bitcointalk Ban Checker installed!");
   // Initialize storage with default values
   browserAPI.storage.sync.set({ banCheckerEnabled: false });
 });
