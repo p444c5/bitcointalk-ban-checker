@@ -1,4 +1,4 @@
-// Initialize browser API compatibility layer
+// Initialize browser API compatibility layer...
 const browserAPI = typeof browser !== "undefined" ? browser : chrome;
 // Initialize banned users data structures
 let Banned = [];

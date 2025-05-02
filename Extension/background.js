@@ -1,5 +1,5 @@
 /* 
-** Background script for the Bitcoin Forum Ban Checker extension
+** Background script for the Bitcoin Forum Ban Checker extension..
 */
 
 // Initialize browser API compatibility layer
