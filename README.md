@@ -28,3 +28,5 @@
 
 *   The accuracy of the highlighting depends entirely on the content and format of the list provided at `https://loyce.club/bans/usernames.txt`.
 *   The extension requires permissions to access `bitcointalk.org` and `loyce.club`, store user preferences (`storage`), and interact with tabs (`tabs`, `scripting`, `activeTab`).
+
+## check [release](https://github.com)
