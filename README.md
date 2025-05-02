@@ -23,8 +23,7 @@
     *   Load the extension directory as an unpacked extension via your browser's extension management page (`chrome://extensions` or `about:debugging`).
 *   **User Script (Adaptation):**
     *   Requires a user script manager (e.g., Tampermonkey, Greasemonkey).
-    *   Adapt the `bitcointalk-ban-checker-userscript.user` logic into a new user script, ensuring it includes the necessary `@match` directive for `*://bitcointalk.org/*` and 
-        potentially `@grant` directives if needing to fetch the list directly or store state.
+    *   Adapt the `bitcointalk-ban-checker-userscript.user` logic into a new user script.
 
 ## Notes
 
