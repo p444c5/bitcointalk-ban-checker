@@ -8,7 +8,6 @@
 // @match        https://bitcointalk.org/index.php?topic=*
 // @grant        GM_xmlhttpRequest
 // @grant        GM_getResourceText
-// @require      https://code.jquery.com/jquery-3.6.0.min.js
 // @resource     bannedUsersList https://loyce.club/bans/usernames.txt
 // ==/UserScript==
 
