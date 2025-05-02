@@ -5,7 +5,6 @@
 *   **Banned User Highlighting:** Automatically scans BitcoinTalk forum threads and user profiles (`action=profile`) for usernames present in a known banned list.
 *   **Visual Indicators:** Applies distinct styling (red color, strikethrough) and adds a "[BANNED]" label next to the usernames of identified banned users.
 *   **External List Source:** Fetches the list of banned users (expected format: `userId:username`) from `https://loyce.club/bans/usernames.txt`.
-*   **Efficient Caching (Extension):** The browser extension caches the fetched banned list for 24 hours to reduce redundant requests and improve performance.
 *   **Toggle Functionality (Extension):** Easily enable or disable the highlighting feature via the extension's toolbar icon when viewing `bitcointalk.org`. The state (enabled/disabled) is remembered.
 *   **Cross-Browser Compatibility (Extension):** Designed to work on both Chrome (and Chromium-based browsers) and Firefox.
 *   **User Script Adaptable:** The core content script logic for identifying and styling users can be extracted and used within user script managers like Tampermonkey or Greasemonkey.
