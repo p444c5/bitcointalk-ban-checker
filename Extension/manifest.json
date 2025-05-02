@@ -1,11 +1,13 @@
 {
   "name": "Bitcoin Forum Ban Checker",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Highlights banned users on Bitcoin Forum",
   "manifest_version": 3,
   "permissions": [
     "activeTab",
-    "storage"
+    "storage",
+    "scripting",
+    "tabs"
   ],
   "host_permissions": [
     "https://bitcointalk.org/*",
@@ -13,8 +15,9 @@
   ],
   "content_scripts": [
     {
-      "matches": ["https://bitcointalk.org/*"],
-      "js": ["content.js"]
+      "matches": ["*://bitcointalk.org/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
     }
   ],
   "background": {
@@ -26,7 +29,7 @@
       "48": "images/image2.png",
       "128": "images/image3.png"
     },
-    "default_title": "Bitcoin Forum Ban Checker",
+    "default_title": "Toggle Ban Checker",
     "default_popup": "popup.html"
   },
   "web_accessible_resources": [
