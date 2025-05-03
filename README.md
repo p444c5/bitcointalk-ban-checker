@@ -29,4 +29,4 @@
 *   The accuracy of the highlighting depends entirely on the content and format of the list provided at `https://loyce.club/bans/usernames.txt`.
 *   The extension requires permissions to access `bitcointalk.org` and `loyce.club`, store user preferences (`storage`), and interact with tabs (`tabs`, `scripting`, `activeTab`).
 
-#### Check [releases](https://github.com/p444c5/bitcointalk-ban-checker/releases/tag/1.0.0) for assets.
+#### Check [releases](https://github.com/p444c5/bitcointalk-ban-checker/releases) for assets.
