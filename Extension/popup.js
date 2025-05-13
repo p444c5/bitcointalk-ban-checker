@@ -4,7 +4,6 @@ const browserAPI = typeof browser !== 'undefined' ? browser : chrome;
 document.addEventListener('DOMContentLoaded', function() {
   const toggleSwitch = document.getElementById('toggleSwitch');
   const statusElement = document.getElementById('status');
-  const bannedListElement = document.getElementById('bannedList');
   // Check current state and update UI
   browserAPI.storage.sync.get(['banCheckerEnabled'], function(result) {
     const isEnabled = result.banCheckerEnabled === true;

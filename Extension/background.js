@@ -20,7 +20,7 @@ async function fetchBannedUsers() {
 
   console.log("Fetching banned users from loyce.club...");
   try {
-    const response = await fetch('https://loyce.club/bans/usernames.txt'); // Ensure this URL provides data in userId:username format
+    const response = await fetch('https://loyce.club/bans/usernames.txt'); 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -139,7 +139,6 @@ browserAPI.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 // Listen for messages from content script
 browserAPI.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === 'getBannedUsers') {
-    // Ensure fetchBannedUsers returns the array (it already does)
     fetchBannedUsers().then(bannedUsers => {
       // Send the array of objects
       sendResponse({ bannedUsers: bannedUsers });
