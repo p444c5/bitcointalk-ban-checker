@@ -30,13 +30,13 @@
       text.split("\n").forEach((line) => {
         const trimmedLine = line.trim();
         if (trimmedLine) {
-          const parts = trimmedLine.split(":");
-          if (parts.length === 2 && parts[0] && parts[1]) {
-            users.push({ username: parts[1].trim(), userId: parts[0].trim() });
+          const lastColonIndex = trimmedLine.lastIndexOf(":");
+          if (lastColonIndex !== -1) {
+            const userId = trimmedLine.substring(0, lastColonIndex).trim();
+            const username = trimmedLine.substring(lastColonIndex + 1).trim();
+            users.push({ username, userId });
           } else {
-            console.warn(
-              `Bitcointalk Ban Checker: Skipping malformed line: ${trimmedLine}`
-            );
+            console.warn(`Bitcointalk Ban Checker: Skipping malformed line: ${trimmedLine}`);
           }
         }
       });
